@@ -1,48 +1,56 @@
-# Treinando-lógica de programação
-# Desafios 3 - while()
+# Treinando-Lógica de Programação
+# Desafios 2 - if{}
 
-Mais uma vez tendo que recorrer ao básico inicio da logica de programação, fortalecendo os fundamentos que se esvaiu da minha mente, mas como um bom combatente venho renovar minhas habilidades e ficar apto ao mercado tão concorrido.
+Tentando corrigir o erro por não ter usado o github quando comecei o curso de Ciencia da Computação.
 
-// 1. Crie um contador que comece em 1 e vá até 10 usando um loop while. 
-//    Mostre cada número. 
+// 1. Pergunte ao usuário qual é o dia da semana.
 ```
-let numero = 0;  
-while (numero <= 10){
-    alert(numero);
-    numero++
+let fimDeSemana = prompt("Olá, hoje é qual dia?").toLowerCase();
+let sabado = 'sabado';
+let domingo = 'domingo';
+
+if (fimDeSemana === sabado || fimDeSemana === domingo ){
+    alert('Bom fim de semana!');
+}else {
+    alert('Boa semana!');
 }
 ```
 
-//2. Crie um contador que começa em 10 e vá até 0 usando um loop while.
-//   Mostre cada número.  
-``` 
-let numero = 10;  
+// 2. Verifique se um número digitado pelo usuário é positivo ou negativo.
+```
+alert('Para saber se o numero é positivo ou negativo digite a seguir.');
+let numero = prompt('Digite um numero:');
 
-while (numero >= 0){
-    alert(numero);
-    numero--
+if (numero < 0 ){
+    alert('O numero '+numero+' é negativo.');
+}else{
+    alert('O numero '+numero+' é positivo.');
 }
 ```
 
-// 3. Crie um programa de contagem regressiva. Peça um número e conte deste número até 0,
-//    usando um loop while no console do navegador.  
-```
-let numero = prompt('Digite um número para iniciar a contagem regressiva:');
 
-while (numero >= 0){
-    alert(numero);
-    numero--
+// 3. Crie um sistema de pontuação para um jogo.
+```
+alert('Para continuarmos, informe a sua pontuação a seguir.');
+let pontos = prompt('Pontuação:');
+
+if(pontos >= 100){
+    alert('Parabéns, você venceu!');
+}else{
+    alert('Tente novamente para ganhar.');
 }
 ```
 
-// 4. Crie um programa de contagem progressiva. Peça um número e conte de 0 até esse número,
-//    usando um loop while no console do navegador.
+// 4. Crie uma mensagem que informa o usuário sobre o saldo da conta.
 ```
-let numeroLimite = prompt('Digite um numero que deseja a contagem:');
-let numero = 0; 
+alert('Para realizar o saldo na conta clique em "Ok".');
+let saldo = 'R$ 2,50 reais'
+alert('Seu saldo na conta é '+saldo)
+```
 
-while (numero <= numeroLimite){
-    alert(numero);
-    numero++
-}
+
+// 5. Peça ao usuário para inserir seu nome usando prompt.
+```
+let nome = prompt('Para continuar informe seu nome:');
+alert('Bem vindo '+nome+', estamos felizes em telo aqui com nosco!');
 ```
